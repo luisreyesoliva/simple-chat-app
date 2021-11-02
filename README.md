@@ -1,8 +1,12 @@
 # Chat-app
-Bienvenidos a la aplicación chat de ejemplo 
+Bienvenidos a la aplicación chat de ejemplo.
+
 Esta aplicación tiene una arquitectura sencilla, orientada a que entiendas los conceptos básicos de conteinerización usando Docker y despliegue en Openshift. 
-Sigue los pasos a continuación para construir y desplegar la aplicación 
+
+Sigue los pasos a continuación para construir y desplegar la aplicación.
+
 Este workshop te ayudará a entender las interioridades de la tecnología de contenedores, y como ayuda al desarrollo y despliegue de una aplicación.
+
 Utilizaremos Red Hat Openshift como nuestra plataforma de referencia para desplegar la aplicación conteinerizada y así entender también parte de sus capacidades.
 
 ## Arquitectura y flujo de acciones
@@ -76,7 +80,7 @@ Lo siguiente va a ser construir la imagen Docker que definirá lo que queremos e
 docker build -t <image-name>:<tag> .
 ```
 Esto es lo que va a suceder:
-* _docker build_ inicia el proces de construcción de la imagen
+* _docker build_ inicia el proceso de construcción de la imagen
 * _-t_ permite tagear la imagen en formato 'nombre:tag'
 * _image-name_ es el nombre que queremos dar a la imagen
 * _tag_ is es el tag para la versión de la imagen que vamos a construir. Se suele usar para identificar diferentes versiones de la imagen a desplegar.
@@ -180,7 +184,7 @@ Debajo de esto, asegúrate que "Deployment" está seleccionado y la opción "Cre
 
  ![21 - Create Server app options](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oxsrrbl95qy7h7ephi6j.png)
 
-### Paso 3: Desplegar el servidor a partir de un Dockerfile
+### Paso 3: Verificar que el servidor está desplegado
 
 Ahora deberíamos ver de nuevo la vista de Topología de la aplicación. Durante unos minutos veremos cómo va avanzando el estado de la aplicación desde "building" hasta "ready" mientras que se ejecuta el proceso de despliegue y se generan todos los recursos en Openshift (pods, servicios, rutas, etc.).
 
