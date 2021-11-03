@@ -18,7 +18,7 @@ let styles = {
 	},
 	header:{
 		height: "7vh",
-		backgroundColor: 'rgba(0, 0, 0, 0.25)',
+		backgroundColor: 'rgba(256, 0, 0, 0.25)',
 		alignItems: 'center',
 		justifyContent: 'center',
 		display: 'flex',
